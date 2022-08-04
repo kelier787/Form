@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><strong>Contact Us</strong></header>
+    <main>
+      <form action="/index.html" method="GET">
+        <section id="customer-info">
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" name="username" id="user-name" required />
+            </li>
+            <li>
+              <label for="user-email">Your E-mail Address</label>
+              <input type="email" name="user-email" id="user-email" required />
+            </li>
+            <li>
+              <label for="user-phone-number">Your Phone Number</label>
+              <input
+                type="tel"
+                name="usernumber"
+                id="user-phone-number"
+                required
+              />
+            </li>
+            <li>
+              <label for="user-message">Your Message</label>
+              <textarea
+                name="usermessage"
+                id="user-message"
+                cols="30"
+                rows="6"
+                required
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="web-search">How did you find us?</label>
+          <select
+            name="websites"
+            id="web-search"
+            aria-placeholder="Web Search"
+            required
+          >
+            <option value="web">Web Search</option>
+            <option value="person-contact">Word of Mouth</option>
+            <option value="Other">Other</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="option"
+                id="call-user"
+                value="call"
+                required
+              />
+              <label for="call-user">Call me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="option"
+                id="send-to-email"
+                value="send-to-user-email"
+                required
+              />
+              <label for="send-to-email">Send me an email</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="option"
+                id="no-answer"
+                value="no-reply"
+                required
+              />
+              <label for="no-answer">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section class="inline-control">
+          <input
+            type="checkbox"
+            name="terms"
+            id="accept-terms"
+            value="agree-terms"
+            required
+          />
+          <label for="accept-terms">Accept Terms</label>
+        </section>
+        <section>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

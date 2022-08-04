@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(236, 252, 253);
+}
+
+header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  background-color: rgb(216, 215, 215);
+  width: 40rem;
+  margin: auto;
+  padding: 1rem;
+  height: 45rem;
+  border-radius: 6px;
+  border-color: antiquewhite;
+  box-shadow: 0px 2px 8px rgb(0, 0, 0, 0.2);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+label {
+  color: rgb(66, 76, 97);
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 0.5rem;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid rgb(152, 159, 184);
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(211, 211, 244);
+}
+
+button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 1px solid rgb(51, 67, 100);
+  border-radius: 4px;
+}
+
+.inline-control {
+  display: flex;
+}
+
+.inline-control input {
+  width: auto;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.inline-control label {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+button {
+  text-align: end;
+}
